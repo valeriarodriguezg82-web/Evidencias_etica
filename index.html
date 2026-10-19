@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Evidencias Digitales — [Tu Nombre Aquí]</title>
+  <title>Portafolio de Evidencias — Ética, Democracia y Constitución Política</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <style>
-    /* VARIABLES Y RESET (Friendly & Warm Palette) */
     :root {
-      --bg-color: #fdfcf5; /* Suave crema de fondo */
-      --primary-color: #e07a5f; /* Terracota cálido, suave */
-      --secondary-color: #3d5a80; /* Azul suave para contraste */
-      --accent-yellow: #f4d35e; /* Amarillo suave para notas/highlights */
+      --bg-color: #fdfcf5;
+      --primary-color: #e07a5f;
+      --secondary-color: #3d5a80;
+      --accent-yellow: #f4d35e;
       --card-bg: #ffffff;
-      --text-main: #3d405b; /* Marrón tierra oscuro, menos fuerte que negro */
+      --text-main: #3d405b;
       --text-muted: #6c757d;
       --soft-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       --font-headers: 'Lora', serif;
@@ -28,25 +27,17 @@
       line-height: 1.6;
     }
 
-    /* HEADER: Soft & Personalized */
     header {
       background: linear-gradient(135deg, #fef8e2 0%, #fdf0d5 100%);
       color: var(--text-main);
-      padding: 4rem 1.5rem 3rem;
+      padding: 3.5rem 1.5rem 2.5rem;
       text-align: center;
       position: relative;
       border-bottom: 2px solid #f1e0c6;
     }
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23f4d35e" fill-opacity="0.2" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="1"/%3E%3Ccircle cx="13" cy="13" r="1"/%3E%3C/g%3E%3C/svg%3E');
-      opacity: 0.5;
-    }
     header h1 {
       font-family: var(--font-headers);
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       font-weight: 400;
       color: var(--primary-color);
       margin-bottom: 0.5rem;
@@ -54,8 +45,8 @@
     header p {
       font-style: italic;
       color: var(--text-muted);
-      font-size: 1.2rem;
-      max-width: 600px;
+      font-size: 1.1rem;
+      max-width: 650px;
       margin: 0.5rem auto 1.5rem;
     }
     .meta-info {
@@ -75,18 +66,16 @@
       box-shadow: var(--soft-shadow);
     }
 
-    /* MAIN CONTAINER */
     .container {
       max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1.5rem;
     }
 
-    /* TABS: Gentle & Warm */
     .tabs {
       display: flex;
       justify-content: center;
-      gap: 0.5rem;
+      gap: 0.75rem;
       margin-bottom: 2rem;
     }
     .tab-btn {
@@ -108,7 +97,6 @@
       box-shadow: var(--soft-shadow);
     }
 
-    /* SEARCH BAR */
     .search-bar {
       width: 100%;
       max-width: 400px;
@@ -119,22 +107,20 @@
       border-radius: 12px;
       background-color: white;
       font-family: var(--font-body);
-      font-size: 1rem;
+      font-size: 0.95rem;
       box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
     }
 
-    /* CONTENT SECTIONS */
     .corte-content { display: none; }
     .corte-content.active { display: block; }
     .section-title {
       font-family: var(--font-headers);
       font-size: 1.8rem;
       color: var(--primary-color);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       text-align: center;
     }
 
-    /* GRIDS & CARDS: Soft & Crafty */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -160,19 +146,17 @@
       font-weight: 600; font-size: 0.7rem; text-transform: uppercase;
       padding: 0.25rem 0.75rem; border-radius: 12px;
     }
-    /* File Types colors */
     .badge-pdf { background-color: #ffcccc; color: #a30000; }
     .badge-link { background-color: #ccddff; color: #0044cc; }
     .badge-photo { background-color: #ccffcc; color: #007700; }
 
     .card-title {
-      font-family: var(--font-headers); font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--text-main);
+      font-family: var(--font-headers); font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);
     }
     .card-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1; }
 
-    /* Mis Aprendizajes: Styled like a stylized note */
     .card-reflection {
-      background-color: #fef8e2; border: 1px dashed #f4d35e; padding: 1rem; border-radius: 8px;
+      background-color: #fef8e2; border: 1px dashed #f4d35e; padding: 0.9rem; border-radius: 8px;
       font-size: 0.85rem; color: #3d405b; margin-bottom: 1.25rem; font-style: italic;
     }
     .card-reflection strong { font-style: normal; color: var(--primary-color); margin-right: 0.25rem; }
@@ -181,45 +165,44 @@
     .btn {
       display: inline-flex; align-items: center; gap: 0.3rem;
       padding: 0.6rem 1.2rem; border-radius: 8px; font-size: 0.85rem;
-      font-weight: 600; text-decoration: none; transition: background-color 0.2s ease;
+      font-weight: 600; text-decoration: none; cursor: pointer; border: none;
+      transition: background-color 0.2s ease;
     }
     .btn-primary { background-color: var(--secondary-color); color: white; }
     .btn-primary:hover { background-color: #2e4a6d; }
     .btn-secondary { background-color: #f1e0c6; color: var(--text-main); }
     .btn-secondary:hover { background-color: #e1d4b6; }
 
-    /* FOOTER */
     footer { text-align: center; padding: 2rem; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #e1d4b6; }
 
-    /* MODAL: Friendly Viewer */
+    /* MODAL VIEWER */
     .modal {
       display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background-color: rgba(61, 64, 91, 0.8); z-index: 1000; justify-content: center; align-items: center;
-      padding: 2rem;
+      padding: 1.5rem;
     }
     .modal-content {
-      background-color: var(--bg-color); width: 100%; max-width: 900px; max-height: 90vh;
+      background-color: var(--bg-color); width: 100%; max-width: 850px; max-height: 90vh;
       border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); overflow: hidden;
-      display: flex; flex-direction: column; position: relative; border: 2px solid #e1d4b6;
+      display: flex; flex-direction: column; border: 2px solid #e1d4b6;
     }
     .modal-header { padding: 1rem; border-bottom: 1px solid #e1d4b6; display: flex; justify-content: space-between; align-items: center; background-color: white; }
-    .modal-title { font-family: var(--font-headers); color: var(--text-main); }
+    .modal-title { font-family: var(--font-headers); color: var(--text-main); font-size: 1.1rem; }
     .close-modal { background: none; border: none; font-size: 1.8rem; color: var(--text-muted); cursor: pointer; }
     .close-modal:hover { color: var(--primary-color); }
     .modal-body { flex-grow: 1; padding: 1rem; overflow: auto; display: flex; justify-content: center; align-items: center; }
-    .modal-body iframe { border: none; }
-    .modal-body img { max-width: 100%; max-height: 100%; border-radius: 8px; }
-
+    .modal-body iframe { border: none; width: 100%; height: 550px; border-radius: 8px; }
+    .modal-body img { max-width: 100%; max-height: 75vh; border-radius: 8px; object-fit: contain; }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Mi Portafolio Académico</h1>
-    <p>Un recorrido por mis aprendizajes en Ética, Democracia y Constitución Política, de [Tu Nombre Aquí]</p>
+    <h1>Portafolio de Evidencias</h1>
+    <p>Ética, Democracia y Constitución Política</p>
     <div class="meta-info">
-      <span class="meta-item">📝 Semestre: 2026-1</span>
-      <span class="meta-item">🧑‍🏫 Docente: [Teacher Name]</span>
+      <span class="meta-item">📌 Materia: Ética, Democracia y Constitución</span>
+      <span class="meta-item">🎓 Semestre: 2026-1</span>
     </div>
   </header>
 
@@ -229,54 +212,39 @@
       <button class="tab-btn" onclick="switchCorte('corte2')">Corte 2</button>
     </div>
 
-    <input type="text" class="search-bar" id="search-input" placeholder="🔍 Buscar evidencia (ej. Tutela)" onkeyup="filterEvidences()">
+    <input type="text" class="search-bar" id="search-input" placeholder="🔍 Buscar evidencia (ej. Amador, Kahoot, Pop Art...)" onkeyup="filterEvidences()">
 
     <!-- CORTE 1 -->
     <div id="corte1" class="corte-content active">
-      <h2 class="section-title">Primeros Pasos Constitucionales</h2>
+      <h2 class="section-title">Evidencias del Primer Corte</h2>
       <div class="grid" id="corte1-grid">
 
-        <!-- Evidencia 1 -->
-        <div class="card" data-title="La Acción de Tutela y los derechos de las víctimas">
+        <!-- Evidencia 1: Cartelera Ética para Amador -->
+        <div class="card" data-title="Cartelera del Capítulo 6 de Ética para Amador">
           <div class="card-body">
-            <div class="card-meta"><span class="card-badge badge-pdf">📄 PDF</span></div>
-            <h3 class="card-title">1. Ensayo: La Tutela y las Víctimas</h3>
-            <p class="card-desc">Análisis crítico de la aplicación del artículo 86 como mecanismo de protección para víctimas del conflicto en Colombia.</p>
+            <div class="card-meta"><span class="card-badge badge-photo">🖼️ Fotografía</span></div>
+            <h3 class="card-title">1. Cartelera: Capítulo 6 "Ética para Amador"</h3>
+            <p class="card-desc">Representación gráfica y síntesis visual sobre la conciencia moral, la responsabilidad y la libertad de elección analizadas por Fernando Savater.</p>
             <div class="card-reflection">
-              <strong>💡 Mis aprendizajes clave:</strong> Comprendí el alcance y la importancia de la inmediatez en la protección de los derechos fundamentales.
+              <strong>💡 Mis aprendizajes clave:</strong> Desarrollar la conciencia moral implica saber que no todo da igual y asumir con libertad las consecuencias de cada elección.
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary" onclick="openModal('PDF: Ensayo sobre Tutela', 'path/to/your/ensayo.pdf')">📄 Ver PDF</button>
+              <button class="btn btn-primary" onclick="openModal('Cartelera Ética para Amador Cap. 6', 'WhatsApp Image 2026-10-18 at 7.44.49 PM.jpeg', 'image')">🖼️ Ver Cartelera</button>
             </div>
           </div>
         </div>
 
-        <!-- Evidencia 2 -->
-        <div class="card" data-title="La división de poderes y la Constitución de 1991">
+        <!-- Evidencia 2: Kahoot Democracia -->
+        <div class="card" data-title="Kahoot sobre la Democracia en Colombia">
           <div class="card-body">
-            <div class="card-meta"><span class="card-badge badge-link">🔗 Enlace</span></div>
-            <h3 class="card-title">2. Estructura del Estado: Mapa</h3>
-            <p class="card-desc">Infografía interactiva (Canva) que detalla las funciones constitucionales de las tres ramas del poder y sus órganos de control.</p>
+            <div class="card-meta"><span class="card-badge badge-link">🔗 Actividad Interactiva</span></div>
+            <h3 class="card-title">2. Kahoot: Democracia en Colombia</h3>
+            <p class="card-desc">Cuestionario interactivo diseñado para evaluar y afianzar conocimientos sobre los principios democráticos e historia constitucional del país.</p>
             <div class="card-reflection">
-              <strong>💡 Mis aprendizajes clave:</strong> Diferencié las funciones constitucionales de la Procuraduría vs. la Contraloría en la veeduría.
+              <strong>💡 Mis aprendizajes clave:</strong> Reforcé conceptos fundamentales sobre la estructura democrática y el ejercicio de la participación ciudadana.
             </div>
             <div class="card-actions">
-              <a href="https://path/to/your/canva/infographic" class="btn btn-secondary" target="_blank">🔗 Ver Infografía</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Evidencia 3 -->
-        <div class="card" data-title="Taller: Dilemas Éticos Contemporáneos en el Conflicto">
-          <div class="card-body">
-            <div class="card-meta"><span class="card-badge badge-photo">🖼️ Foto</span></div>
-            <h3 class="card-title">3. Taller: Ética de la Paz</h3>
-            <p class="card-desc">Evidencia fotográfica y notas del debate grupal sobre dilemas éticos surgidos en la implementación del acuerdo de paz.</p>
-            <div class="card-reflection">
-              <strong>💡 Mis aprendizajes clave:</strong> Aprendí a argumentar desde principios éticos sólidos como la justicia restaurativa.
-            </div>
-            <div class="card-actions">
-              <button class="btn btn-primary" onclick="openModal('Foto: Taller de Ética de Paz', 'path/to/your/debate-photo.jpg', 'image')">🖼️ Ver Foto</button>
+              <a href="https://create.kahoot.it/share/democracia-en-colombia/62c59330-344c-471d-9020-87c748dcd67e" class="btn btn-secondary" target="_blank">🔗 Ver Kahoot</a>
             </div>
           </div>
         </div>
@@ -286,35 +254,80 @@
 
     <!-- CORTE 2 -->
     <div id="corte2" class="corte-content">
-      <h2 class="section-title">Hacia la Ciudadanía Activa</h2>
+      <h2 class="section-title">Evidencias del Segundo Corte</h2>
       <div class="grid" id="corte2-grid">
 
-        <!-- Evidencia 4 -->
-        <div class="card" data-title="Mecanismos de Participación Ciudadana y Propuesta">
+        <!-- Evidencia 3: Pop Art Book -->
+        <div class="card" data-title="Pop Art Book de Democracia vs Corrupción PDF">
           <div class="card-body">
-            <div class="card-meta"><span class="card-badge badge-link">🔗 Enlace</span></div>
-            <h3 class="card-title">4. Propuesta: Participación Local</h3>
-            <p class="card-desc">Presentación de una iniciativa de plebiscito ficticio para resolver una problemática comunitaria en [Tu Barrio/Ciudad].</p>
+            <div class="card-meta"><span class="card-badge badge-pdf">📄 Documento PDF</span></div>
+            <h3 class="card-title">1. Pop Art Book: Democracia vs. Corrupción</h3>
+            <p class="card-desc">Libro creativo desplegable (Pop-up) con ilustraciones y elementos visuales que contrastan los valores democráticos frente a las prácticas corruptas[cite: 2, 3, 4, 5].</p>
             <div class="card-reflection">
-              <strong>💡 Mis aprendizajes clave:</strong> Identifiqué los pasos y umbrales normativos exigidos para activar una iniciativa popular.
+              <strong>💡 Mis aprendizajes clave:</strong> Evidencié cómo el voto, la libertad, los deberes y la opinión pública equilibran la balanza frente al fraude y el soborno[cite: 3, 4, 5].
             </div>
             <div class="card-actions">
-              <a href="https://path/to/your/proposal/presentation" class="btn btn-secondary" target="_blank">🔗 Ver Propuesta</a>
+              <button class="btn btn-primary" onclick="openModal('Pop Art Book: Democracia vs Corrupción', 'WhatsApp Image 2026-10-18 at 7.29.24 PM.pdf', 'pdf')">📄 Ver PDF</button>
             </div>
           </div>
         </div>
 
-        <!-- Evidencia 5 -->
-        <div class="card" data-title="La ética pública y el Código de Integridad">
+        <!-- Evidencia 4: Reglamento Estudiantil CIDE -->
+        <div class="card" data-title="Mapa conceptual del capítulo 10 del reglamento estudiantil de CIDE Canva">
           <div class="card-body">
-            <div class="card-meta"><span class="card-badge badge-pdf">📄 PDF</span></div>
-            <h3 class="card-title">5. Informe: Ética Pública</h3>
-            <p class="card-desc">Análisis de un caso de corrupción real en la función pública y su confrontación con los principios del Código de Integridad.</p>
+            <div class="card-meta"><span class="card-badge badge-link">🔗 Canva</span></div>
+            <h3 class="card-title">2. Mapa Conceptual: Reglamento Estudiantil CIDE</h3>
+            <p class="card-desc">Síntesis esquemática desarrollada en Canva del Capítulo 10 del reglamento institucional de la CIDE.</p>
             <div class="card-reflection">
-              <strong>💡 Mis aprendizajes clave:</strong> Reconocí la relevancia del Código de Integridad como guía para los servidores públicos.
+              <strong>💡 Mis aprendizajes clave:</strong> Comprendí el marco normativo, los derechos y deberes que rigen la convivencia académica e institucional.
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary" onclick="openModal('PDF: Informe Ética Pública', 'path/to/your/integrity-report.pdf')">📄 Ver PDF</button>
+              <a href="https://canva.link/9h1x8jcmhmd7z81" class="btn btn-secondary" target="_blank">🔗 Ver en Canva</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evidencia 5: Presentación Oreate AI -->
+        <div class="card" data-title="Fundamentos del Estado y Principios Directrices Presentacion">
+          <div class="card-body">
+            <div class="card-meta"><span class="card-badge badge-link">🔗 Presentación</span></div>
+            <h3 class="card-title">3. Fundamentos del Estado y Principios Directrices</h3>
+            <p class="card-desc">Presentación dinámica e interactiva que aborda las bases teóricas y orgánicas del Estado colombiano.</p>
+            <div class="card-reflection">
+              <strong>💡 Mis aprendizajes clave:</strong> Analicé los principios rectores que estructuran el Estado Social de Derecho y sus fines esenciales.
+            </div>
+            <div class="card-actions">
+              <a href="https://www.oreateai.com/share?shareKey=khBUt0NGL5rCI6PLOhqWjjaj2gke4mrLrI6xPjhrBPjQuB8iA" class="btn btn-secondary" target="_blank">🔗 Ver Presentación</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evidencia 6: Rompecabezas 1 -->
+        <div class="card" data-title="Rompecabezas Capitolio y Pueblo Actividad Interactiva">
+          <div class="card-body">
+            <div class="card-meta"><span class="card-badge badge-photo">🖼️ Fotografía</span></div>
+            <h3 class="card-title">4. Actividad Interactiva: Rompecabezas (Capitolio y Soberanía)</h3>
+            <p class="card-desc">Fotografía del armado del rompecabezas didáctico que representa al pueblo y la infraestructura del Congreso / Capitolio.</p>
+            <div class="card-reflection">
+              <strong>💡 Mis aprendizajes clave:</strong> La soberanía reside en el pueblo, quien construye y sostiene las instituciones democráticas del país[cite: 1].
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary" onclick="openModal('Rompecabezas: Capitolio y Soberanía', 'WhatsApp Image 2026-10-18 at 7.18.01 PM.jpeg', 'image')">🖼️ Ver Foto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evidencia 7: Rompecabezas 2 -->
+        <div class="card" data-title="Rompecabezas Institucionalidad y Congreso Actividad Interactiva">
+          <div class="card-body">
+            <div class="card-meta"><span class="card-badge badge-photo">🖼️ Fotografía</span></div>
+            <h3 class="card-title">5. Actividad Interactiva: Rompecabezas (Ramas del Poder)</h3>
+            <p class="card-desc">Fotografía del rompecabezas completado sobre las instituciones públicas, la rama legislativa y el trabajo ciudadano.</p>
+            <div class="card-reflection">
+              <strong>💡 Mis aprendizajes clave:</strong> Representación gráfica del engranaje entre las leyes, la rama ejecutiva y el trabajo de la sociedad[cite: 7].
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary" onclick="openModal('Rompecabezas: Ramas del Poder', 'WhatsApp Image 2026-10-18 at 7.49.25 PM.jpeg', 'image')">🖼️ Ver Foto</button>
             </div>
           </div>
         </div>
@@ -339,7 +352,6 @@
   </div>
 
   <script>
-    // Tab switching
     function switchCorte(corteId) {
       document.querySelectorAll('.corte-content').forEach(el => el.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
@@ -347,16 +359,15 @@
       event.currentTarget.classList.add('active');
     }
 
-    // Modal Viewer functions
     function openModal(title, url, type = 'pdf') {
       const modal = document.getElementById('document-modal');
       const modalTitle = document.getElementById('modal-title');
       const modalBody = document.getElementById('modal-body');
       modalTitle.innerText = title;
-      modalBody.innerHTML = ''; // Clear previous content
+      modalBody.innerHTML = '';
 
       if (type === 'pdf') {
-        modalBody.innerHTML = `<iframe src="${url}" width="100%" height="600px" style="border-radius: 8px;"></iframe>`;
+        modalBody.innerHTML = `<iframe src="${url}"></iframe>`;
       } else if (type === 'image') {
         modalBody.innerHTML = `<img src="${url}" alt="${title}">`;
       }
@@ -365,10 +376,9 @@
 
     function closeModal() {
       document.getElementById('document-modal').style.display = 'none';
-      document.getElementById('modal-body').innerHTML = ''; // Clear contents on close
+      document.getElementById('modal-body').innerHTML = '';
     }
 
-    // Simple search filter
     function filterEvidences() {
       const input = document.getElementById('search-input');
       const filter = input.value.toLowerCase();
@@ -384,7 +394,6 @@
       });
     }
 
-    // Close modal if clicking outside the content
     window.onclick = function(event) {
       const modal = document.getElementById('document-modal');
       if (event.target == modal) {
